@@ -28,4 +28,4 @@ You, all my `Stargazers`, are making it work. This is because of you. A BIG THAN
 
 ## 📹 Table of Contents
 
-- **`Day 00: Why React Needs Design Patterns + 10-Min Crash Course`** - [Watch Video](https://www.youtube.com/watch?v=OWi31QoHqNk&pp=0gcJCckJAYcqIYzv) || [Source Code](https://github.com/tapascript/40-days-of-javascript/blob/main/day-00/README.md)
+- **`Day 00: Why React Needs Design Patterns + 10-Min Crash Course`** - [Watch Video](https://www.youtube.com/watch?v=OWi31QoHqNk&pp=0gcJCckJAYcqIYzv) || [Source Code](https://github.com/tapascript/15-days-of-react-design-patterns/tree/main/day-00)
