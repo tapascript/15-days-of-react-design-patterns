@@ -1,6 +1,5 @@
-// ❌ MESSY CODE - UserProfile.jsx
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const UserProfile = ({ userId }) => {
   const [user, setUser] = useState(null);
@@ -18,15 +17,17 @@ const UserProfile = ({ userId }) => {
   const fetchUserData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/users/${userId}`);
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_BASE_URL}/api/users/${userId}`
+      );
       setUser(response.data);
       setFormData({
         name: response.data.name,
         email: response.data.email,
-        bio: response.data.bio
+        bio: response.data.bio,
       });
     } catch (err) {
-      setError('Failed to fetch user data');
+      setError("Failed to fetch user data");
     } finally {
       setLoading(false);
     }
@@ -34,27 +35,32 @@ const UserProfile = ({ userId }) => {
 
   const fetchUserPosts = async () => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/users/${userId}/posts`);
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_BASE_URL}/api/users/${userId}/posts`
+      );
       setPosts(response.data);
     } catch (err) {
-      console.error('Failed to fetch posts');
+      console.error("Failed to fetch posts");
     }
   };
 
   const handleSaveProfile = async () => {
     try {
-      const response = await axios.put(`${import.meta.env.VITE_API_BASE_URL}/api/users/${userId}`, formData);
+      const response = await axios.put(
+        `${import.meta.env.VITE_API_BASE_URL}/api/users/${userId}`,
+        formData
+      );
       setUser(response.data);
       setIsEditing(false);
     } catch (err) {
-      setError('Failed to update profile');
+      setError("Failed to update profile");
     }
   };
 
   const handleInputChange = (field, value) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [field]: value
+      [field]: value,
     }));
   };
 
@@ -80,8 +86,8 @@ const UserProfile = ({ userId }) => {
   return (
     <div className="user-profile">
       <div className="profile-header">
-        <img 
-          src={user.avatar || '/default-avatar.png'} 
+        <img
+          src={user.avatar || "/default-avatar.png"}
           alt={`${user.name}'s avatar`}
           className="avatar"
         />
@@ -90,10 +96,7 @@ const UserProfile = ({ userId }) => {
             <h1>{user.name}</h1>
             <p className="email">{user.email}</p>
             <p className="bio">{user.bio}</p>
-            <button 
-              onClick={() => setIsEditing(true)}
-              className="edit-btn"
-            >
+            <button onClick={() => setIsEditing(true)} className="edit-btn">
               Edit Profile
             </button>
           </div>
@@ -102,23 +105,23 @@ const UserProfile = ({ userId }) => {
             <input
               type="text"
               value={formData.name}
-              onChange={(e) => handleInputChange('name', e.target.value)}
+              onChange={(e) => handleInputChange("name", e.target.value)}
               placeholder="Name"
             />
             <input
               type="email"
               value={formData.email}
-              onChange={(e) => handleInputChange('email', e.target.value)}
+              onChange={(e) => handleInputChange("email", e.target.value)}
               placeholder="Email"
             />
             <textarea
               value={formData.bio}
-              onChange={(e) => handleInputChange('bio', e.target.value)}
+              onChange={(e) => handleInputChange("bio", e.target.value)}
               placeholder="Bio"
             />
             <div className="form-actions">
-              <button onClick={handleSaveProfile}>Save</button>
               <button onClick={() => setIsEditing(false)}>Cancel</button>
+              <button onClick={handleSaveProfile}>Save</button>
             </div>
           </div>
         )}
@@ -129,7 +132,7 @@ const UserProfile = ({ userId }) => {
         {posts.length === 0 ? (
           <p>No posts yet.</p>
         ) : (
-          posts.map(post => (
+          posts.map((post) => (
             <div key={post.id} className="post-card">
               <h3>{post.title}</h3>
               <p>{post.content.substring(0, 150)}...</p>

@@ -240,24 +240,24 @@ body {
   font-size: 0.95rem;
 }
 
-.form-actions button:first-child {
+.form-actions button:last-child {
   background: linear-gradient(135deg, #10b981, #059669);
   color: white;
   box-shadow: 0 2px 4px rgba(16, 185, 129, 0.3);
 }
 
-.form-actions button:first-child:hover {
+.form-actions button:last-child:hover {
   background: linear-gradient(135deg, #059669, #047857);
   transform: translateY(-1px);
 }
 
-.form-actions button:last-child {
+.form-actions button:first-child {
   background-color: #f3f4f6;
   color: #6b7280;
   border: 1px solid #d1d5db;
 }
 
-.form-actions button:last-child:hover {
+.form-actions button:first-child:hover {
   background-color: #e5e7eb;
   color: #4b5563;
 }
