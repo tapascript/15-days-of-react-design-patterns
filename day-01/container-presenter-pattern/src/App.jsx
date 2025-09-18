@@ -1,9 +1,11 @@
-import UserProfile from "./components/messy-way/UserProfile";
-import "./App.css"
+// import UserProfile from "./messy-way/components/UserProfile";
+
+import "./App.css";
+import UserProfileContainer from "./with-pattern/components/profile/UserProfileContainer";
 function App() {
   return (
     <div>
-     <UserProfile userId={1}/>
+      <UserProfileContainer userId={1} />
     </div>
   );
 }
