@@ -4,13 +4,18 @@ import CounterWithRef from "./state-ref/components/CounterWithRef";
 
 import FeedbackForm from "./messy/FeedbackForm";
 
+import ControlledFeedbackForm from "./controlled/ControlledFeedbackForm";
+
 function App() {
   return (
     <div className="flex flex-col items-center">
       <Counter />
       <AutoFocusInput />
       <CounterWithRef />
+
       <FeedbackForm />
+
+      <ControlledFeedbackForm />
     </div>
   );
 }
