@@ -6,6 +6,8 @@ import FeedbackForm from "./messy/FeedbackForm";
 
 import ControlledFeedbackForm from "./controlled/ControlledFeedbackForm";
 
+import UncontrolledFeedbackForm from "./uncontrolled/UncontrolledFeedbackForm";
+
 function App() {
   return (
     <div className="flex flex-col items-center">
@@ -16,6 +18,8 @@ function App() {
       <FeedbackForm />
 
       <ControlledFeedbackForm />
+
+      <UncontrolledFeedbackForm />
     </div>
   );
 }
