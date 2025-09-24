@@ -30,3 +30,4 @@ You, all my `Stargazers`, are making it work. This is because of you. A BIG THAN
 
 - **`Day 00: Why React Needs Design Patterns + 10-Min Crash Course`** - [Watch Video](https://www.youtube.com/watch?v=OWi31QoHqNk&pp=0gcJCckJAYcqIYzv) || [Source Code](https://github.com/tapascript/15-days-of-react-design-patterns/tree/main/day-00)
 - **`Day 01: React Container-Presenter Pattern | Code Smell to Clean Code`** - [Watch Video](https://youtu.be/1UHbhikwg-s) || [Source Code](https://github.com/tapascript/15-days-of-react-design-patterns/tree/main/day-01)
+- **`Day 02: React Design Patterns || Controlled & Uncontrolled Forms`** - [Watch Video](https://youtu.be/jPMCouXondI) || [Source Code](https://github.com/tapascript/15-days-of-react-design-patterns/tree/main/day-02)
