@@ -1,16 +1,33 @@
+import { useState } from "react";
+// import Modal from "./messy/Modal";
+import Modal from "./with-pattern/modal/Modal";
+import "./App.css";
+
 function App() {
-  return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-xl p-4 m-4">Start Coding in React 19</h1>
-      <p className="bg-gray-300 p-2 rounded-sm text-3xl">
-        <a 
-          href="https://www.youtube.com/watch?v=hiiGUjEkzbM&list=PLIJrr73KDmRw-T8bdJn3XxVMbH-zlooKb" 
-          target="_blank"
-          className="underline mx-1">Learn React 19 With Code</a>
-        <span>▶️</span>  
-      </p>
-    </div>
-  );
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <div className="flex flex-col items-center">
+            <button onClick={() => setIsOpen(true)}>Open Modal</button>
+
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+                <Modal.Header>
+                    <h2>Welcome!</h2>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>
+                        This is a modal built with the Compound Component
+                        pattern.
+                    </p>
+                </Modal.Body>
+                <Modal.Footer>
+                    <button onClick={() => setIsOpen(false)}>Close</button>
+                    <button onClick={() => alert("Action performed!")}>
+                        Do Action
+                    </button>
+                </Modal.Footer>
+            </Modal>
+        </div>
+    );
 }
 
 export default App;
