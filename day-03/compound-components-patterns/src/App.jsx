@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import Modal from "./messy/Modal";
 import Modal from "./with-pattern/modal/Modal";
+import AccordionDemo from "./with-pattern/accordion/AccordionDemo";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                         This is a modal built with the Compound Component
                         pattern.
                     </p>
+                    <AccordionDemo />
                 </Modal.Body>
                 <Modal.Footer>
                     <button onClick={() => setIsOpen(false)}>Close</button>
