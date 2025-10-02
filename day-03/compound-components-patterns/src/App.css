@@ -1,0 +1,22 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 400px;
+  position: relative;
+}
+.modal-header { font-weight: bold; margin-bottom: 1rem; }
+.modal-footer { display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1rem; }
+.modal-close { position: absolute; top: 8px; right: 8px; background: none; border: none; font-size: 1.2rem; }
+
+.accordion-item { margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 4px; }
+.accordion-title { width: 100%; text-align: left; padding: 0.5rem; font-weight: bold; cursor: pointer; background: #f9f9f9; border: none; }
+.accordion-content { padding: 0.5rem; background: #fff; }
