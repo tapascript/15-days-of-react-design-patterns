@@ -2,7 +2,7 @@
 
 ## **🎯 Goal of This Lesson**
 
-- About Day 02
+- About Day 03
 - We Will Learn
 - Prerequisites
 - The Prop Soup
