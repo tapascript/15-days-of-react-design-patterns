@@ -5,7 +5,7 @@
 - Should We Learn Render Props?
 - We Will Learn
 - Prerequisites
-- The Problem’
+- The Problem
 - Code Setup
 - Messy Tracker Problem
 - What is Render Props Pattern?
