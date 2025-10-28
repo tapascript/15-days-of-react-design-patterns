@@ -1,8 +1,8 @@
-import { useContext } from "react";
+import { use } from "react";
 import { BrandContext } from "../context";
 
 const useBrand = () => {
-    const brand = useContext(BrandContext);
+    const brand = use(BrandContext);
     return brand;
 };
 

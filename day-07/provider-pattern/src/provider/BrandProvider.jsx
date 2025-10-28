@@ -12,9 +12,9 @@ const BrandProvider = ({ children }) => {
   }, []);
 
   return (
-    <BrandContext.Provider value={brand}>
+    <BrandContext value={brand}>
       {children}
-    </BrandContext.Provider>
+    </BrandContext>
   );
 };
 BrandProvider.propTypes = {
