@@ -20,7 +20,7 @@ export default function AuthPanel() {
 
       {isAuthenticated ? (
         <>
-          <p>Welcome, <strong>{user.name}</strong> 🎉</p>
+          <p>Welcome, <strong>{user}</strong> 🎉</p>
           <button onClick={logout}>
             Logout
           </button>
