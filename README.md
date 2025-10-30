@@ -10,11 +10,11 @@ Your support means a lot.
 - Liked my work? It takes months of hard work to create quality content and present it to you. You can show your support for me with a STAR(⭐) to this repository.
 
     > Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)
-    [![Stargazers repo roster for tapascript/15-days-of-react-design-patterns](https://reporoster.com/stars/tapascript/15-days-of-react-design-patterns)](https://github.com/atapas/tapascript/15-days-of-react-design-patterns)
+    [![Stargazers repo roster for tapascript/15-days-of-react-design-patterns](https://reporoster.com/stars/tapascript/15-days-of-react-design-patterns)](https://github.com/tapascript/15-days-of-react-design-patterns)
 
 ### 🤝 Sponsor My Work
 
-I am an independent educator and open-source enthusiast who creates meaningful projects to teach programming on my YouTube Channel. **You can support my work by [Sponsoring me on GitHub](https://github.com/sponsors/atapas) or [Buy Me a Cofee](https://buymeacoffee.com/tapasadhikary)**.
+I am an independent educator and open-source enthusiast who creates meaningful projects to teach programming on my YouTube Channel. **You can support my work by [Sponsoring me on GitHub](https://github.com/sponsors/atapas) or [Buy Me a Coffee](https://buymeacoffee.com/tapasadhikary)**.
 
 ### 📊 Star History
 
