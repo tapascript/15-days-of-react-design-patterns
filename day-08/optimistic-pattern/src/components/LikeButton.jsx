@@ -1,12 +1,11 @@
-// LikeButton.jsx (Client component)
+
 import { startTransition, useOptimistic, useState } from "react";
-// pretend API:
+
 async function sendLikeToServer(postId) {
     // simulate network
     await new Promise((r) => setTimeout(r, 700));
 
-    // optionally throw to simulate error:
-    // if (Math.random() < 0.2) throw new Error("Network failed");
+    if (Math.random() < 0.2) throw new Error("Network failed");
     console.log(`Sent a like for the post id ${postId}`);
     return { success: true };
 }
