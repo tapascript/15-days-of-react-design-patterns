@@ -1,7 +1,5 @@
 # Day 07 - Your Task
 
-“Alright, your task for today
-
 ## Build an Auth Context & Provider
 
 - Should hold user and isAuthenticated
