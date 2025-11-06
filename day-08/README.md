@@ -1,18 +1,15 @@
-# Day 07 - Provider Pattern
+# Day 08 - Optimistic Hook Pattern
 
 ## **🎯 Goal of This Lesson**
 
-- What Will We Learn?
-- Provider Pattern
-- Provider & Context
-- Create a Context
-- Create a Provider
-- Wrapping the Hierarchy
-- Hook Pattern with Provider and Context
-- Multiple Providers and Contexts
-- Context in React 19 Way
+- Hey, Optimistic
+- Things to Cover
+- What is Optimistic UI?
+- useOptimisitc Hook in React
+- Mini Project using useOptimistic() Hook
+- Error & Rollback
 - Use Cases & Ideas
-- Pitfalls & Anti-Patterns
+- Pifalls
 - Tasks
 
 ## 🫶 Support
@@ -32,4 +29,4 @@ I am an independent educator and open-source enthusiast who creates meaningful p
 
 Here is the video for you to go through and learn:
 
-[![day-07](./banner.jpg)](https://www.youtube.com/watch?v=POWMosrdamI "Video")
+[![day-08](./banner.jpg)](https://youtu.be/x03yX-yNxas "Video")
