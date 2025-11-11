@@ -7,7 +7,7 @@ function toggleReducer(state, action) {
     }
 }
 
-function customReducer(state, action) {
+function customToggleReducer(state, action) {
     switch (action.type) {
       case "toggle":
         if (state.clicks >= 3) return state;
@@ -17,4 +17,4 @@ function customReducer(state, action) {
     }
 }
 
-export { toggleReducer, customReducer };
+export { toggleReducer, customToggleReducer };
