@@ -14,7 +14,7 @@ export default function Toggle({ reducer = toggleReducer, onToggle }) {
         <button
             onClick={handleToggle}
             className={`px-4 py-2 rounded-md text-white cursor-pointer ${
-                state.on ? "bg-green-600" : "bg-red-500"
+                on ? "bg-green-600" : "bg-red-500"
             }`}
         >
             {on ? "ON" : "OFF"} (Clicks: {clicks})
