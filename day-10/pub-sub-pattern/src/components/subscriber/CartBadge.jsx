@@ -13,10 +13,10 @@ export default function CartBadge() {
   return (<div className="flex flex-col text-center">
     <h2 className="text-2xl">Subscriber</h2>
     <p className="text-4xl text-center">🛒 {items.length}</p>
-    <ui className="list-none">
+    <ul className="list-none">
         {items.map(item => (
             <li key={item.id}>{item.name}</li>
         ))}
-    </ui>
+    </ul>
     </div>);
 }
