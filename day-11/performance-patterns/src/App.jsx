@@ -1,10 +1,12 @@
-import RenderTrackerDemo from "./components/rerenders/RenderTrackerDemo";
+import RenderTrackerDemo from "./performance/rerenders/RenderTrackerDemo";
 
-import MemoizedProfileTracker from "./components/memization/memo/MemoizedProfileTracker";
+import MemoizedProfileTracker from "./performance/memization/memo/MemoizedProfileTracker";
 
-import ChildDemo from "./components/memization/use-callback/ChildDemo";
+import ChildDemo from "./performance/memization/use-callback/ChildDemo";
 
-import UsersSortingDemo from "./components/memization/use-memo/UsersSortingDemo";
+import UsersSortingDemo from "./performance/memization/use-memo/UsersSortingDemo";
+
+import SearchBox from "./performance/debouncing/SearchBox";
 
 function App() {
     return (
@@ -12,6 +14,7 @@ function App() {
             <RenderTrackerDemo />
             <MemoizedProfileTracker />
             <ChildDemo />
+            <SearchBox />
             <UsersSortingDemo />
         </div>
     );
