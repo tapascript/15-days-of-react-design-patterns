@@ -5,7 +5,7 @@ const RenderTrackerDemo = () => {
   const [value, setValue] = useState("");
 
   return (
-    <div>
+    <div className="p-2 border rounded">
       <RenderTracker />
       <input
         className="border rounded p-1"
