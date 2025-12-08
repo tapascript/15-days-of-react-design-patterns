@@ -1,8 +1,8 @@
-import TransitionDemo from "./performance/transition/TransitionDemo";
+import DeferredDemo from "./performance/deffered/DeferredDemo";
 const PartTwo = () => {
     return (
         <>
-            <TransitionDemo />
+            <DeferredDemo />
         </>
     );
 };
