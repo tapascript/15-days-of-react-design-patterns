@@ -1,8 +1,8 @@
-import VirtualizationDemo from "./performance/virtualization/VirtualizationDemo";
+import TransitionDemo from "./performance/transition/TransitionDemo";
 const PartTwo = () => {
     return (
         <>
-            <VirtualizationDemo />
+            <TransitionDemo />
         </>
     );
 };
