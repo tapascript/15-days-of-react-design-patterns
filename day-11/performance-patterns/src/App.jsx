@@ -1,10 +1,10 @@
 import RenderTrackerDemo from "./performance/rerenders/RenderTrackerDemo";
 
-import MemoizedProfileTracker from "./performance/memization/memo/MemoizedProfileTracker";
+import MemoizedProfileTracker from './performance/memoization/memo/MemoizedProfileTracker'
 
-import ChildDemo from "./performance/memization/use-callback/ChildDemo";
+import ChildDemo from "./performance/memoization/use-callback/ChildDemo";
 
-import UsersSortingDemo from "./performance/memization/use-memo/UsersSortingDemo";
+import UsersSortingDemo from "./performance/memoization/use-memo/UsersSortingDemo";
 
 import SearchBox from "./performance/debouncing/SearchBox";
 
