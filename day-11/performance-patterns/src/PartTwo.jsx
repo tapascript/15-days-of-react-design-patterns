@@ -1,10 +1,8 @@
-import LazyLoader from "./performance/lazy-loading/LazyLoader";
-import NonLazyLoader from "./performance/lazy-loading/NonLazyLoader";
+import VirtualizationDemo from "./performance/virtualization/VirtualizationDemo";
 const PartTwo = () => {
     return (
         <>
-            <NonLazyLoader />
-            <LazyLoader />
+            <VirtualizationDemo />
         </>
     );
 };
