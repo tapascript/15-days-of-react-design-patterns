@@ -1,24 +1,10 @@
-import RenderTrackerDemo from "./performance/rerenders/RenderTrackerDemo";
-
-import MemoizedProfileTracker from "./performance/memization/memo/MemoizedProfileTracker";
-
-import ChildDemo from "./performance/memization/use-callback/ChildDemo";
-
-import UsersSortingDemo from "./performance/memization/use-memo/UsersSortingDemo";
-
-import SearchBox from "./performance/debouncing/SearchBox";
-
-import ScrollTracker from "./performance/throttling/ScrollTracker";
-
+import PartOne from "./PartOne";
+import PartTwo from "./PartTwo";
 function App() {
     return (
         <div className="flex flex-col items-center m-2 space-y-3">
-            <ScrollTracker />
-            <RenderTrackerDemo />
-            <MemoizedProfileTracker />
-            <ChildDemo />
-            <SearchBox />
-            <UsersSortingDemo />
+            <PartOne />
+            <PartTwo />
         </div>
     );
 }
