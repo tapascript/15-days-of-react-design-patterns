@@ -5,7 +5,7 @@ import { useFakeUsers } from "./data";
 
 const VirtualizationDemo = () => {
     const users = useFakeUsers(50000);
-    const [mode, setMode] = useState("non-virtual"); // "virtual" or "non-virtual"
+    const [mode, setMode] = useState("virtual"); // "virtual" or "non-virtual"
 
     return (
         <div style={{ padding: 20, fontFamily: "system-ui, sans-serif" }}>

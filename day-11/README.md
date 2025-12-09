@@ -2,6 +2,8 @@
 
 ## **🎯 Goal of This Lesson**
 
+## Part 1
+
 - Performance Patterns
 - What’s in Part 1?
 - Re-Rendering in React
@@ -13,6 +15,22 @@
 - Debouncing
 - Throttling
 - Tasks and End
+
+## Part 2
+
+- Advanced Patterns
+- What’s in Part 2?
+- React Compiler
+- Lazy Loading & Suspense
+- Component Isolation
+- Context Optimizations
+- Virtualization
+- Concurrency and useTransition()
+- Deferred Value
+- List and Keys
+- Tools
+- Tasks
+- Oner Word of Wisdom
 
 ## 🫶 Support
 
@@ -27,8 +45,14 @@ Your support means a lot.
 
 I am an independent educator and open-source enthusiast who creates meaningful projects to teach programming on my YouTube Channel. **You can support my work by [Sponsoring me on GitHub](https://github.com/sponsors/atapas) or [Buy Me a Cofee](https://buymeacoffee.com/tapasadhikary)**.
 
-## Video
+## Video Sessions
 
 Here is the video for you to go through and learn:
 
+### Part 1 Video
+
 [![day-11.1](./banner-1.jpg)](https://youtu.be/G8Mk6lsSOcw "Video")
+
+## Part 2 Video
+
+[![day-11.2](./banner-2.jpg)](https://youtu.be/HJFDXKkz67M "Video")
