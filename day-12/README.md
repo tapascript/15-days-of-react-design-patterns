@@ -2,8 +2,6 @@
 
 ## **🎯 Goal of This Lesson**
 
-## Part 1
-
 - Day 12
 - Slots
 - Single Default Slot
