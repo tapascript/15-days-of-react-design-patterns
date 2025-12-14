@@ -8,7 +8,6 @@ export default function CardWithSlots({ header, content, footer, style }) {
         <div
             style={{
                 border: "1px solid #ccc",
-                borderRadius: 10,
                 width: 540,
                 ...style,
             }}
