@@ -1,3 +1,3 @@
 export function useUser() {
-    return { user: {}, isLoading: false };
+    return { user: {"name": "tapaScript"}, isLoading: false };
 }
