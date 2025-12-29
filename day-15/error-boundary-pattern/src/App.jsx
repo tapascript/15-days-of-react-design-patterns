@@ -9,7 +9,7 @@ function App() {
             <div className="flex space-x-3">
                 <UserProfile />
 
-                <ErrorBoundary fallback={<Error />}>
+                <ErrorBoundary fallback={Error}>
                     <StatsWidget />
                 </ErrorBoundary>
             </div>
