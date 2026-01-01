@@ -1,4 +1,4 @@
-import ErrorBoundary from "./ErrorBoundary";
+import ErrorBoundary from "./components/ErrorBoundary";
 import Error from "./components/Error";
 import StatsWidget from "./components/StatsWidget";
 import UserProfile from "./components/UserProfile";
