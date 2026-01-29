@@ -1,8 +1,9 @@
 import { use } from "react";
-import { userResource } from "../resources/userResource";
+import { getUserResources } from "../resources/userResource";
 
 export default function Orders() {
-  const orders = use(userResource.ordersPromise);
+   const { ordersPromise } = getUserResources();
+  const orders = use(ordersPromise);
 
   return (
     <>

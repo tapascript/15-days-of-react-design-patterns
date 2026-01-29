@@ -1,11 +1,25 @@
 import { fetchAnalytics, fetchOrders, fetchUser } from "../api";
 
-const userPromise = fetchUser();
-const ordersPromise = userPromise.then((user) => fetchOrders(user.id));
-const analyticsPromise = userPromise.then((user) => fetchAnalytics(user.id));
+let userPromise;
+let ordersPromise;
+let analyticsPromise;
 
-export const userResource = {
+export function createUserResources() {
+  userPromise = fetchUser();
+
+  ordersPromise = userPromise.then(user =>
+    fetchOrders(user.id)
+  );
+
+  analyticsPromise = userPromise.then(user =>
+    fetchAnalytics(user.id)
+  );
+}
+
+export function getUserResources() {
+  return {
     userPromise,
     ordersPromise,
-    analyticsPromise,
-};
+    analyticsPromise
+  };
+}
