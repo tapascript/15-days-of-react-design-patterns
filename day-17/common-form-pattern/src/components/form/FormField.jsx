@@ -9,7 +9,6 @@ export const FormField = ({
     type = "text",
     placeholder,
     required = false,
-    className = "",
 }) => {
     const { values, errors, touched, handleChange, handleBlur } =
         useFormContext();
@@ -17,7 +16,7 @@ export const FormField = ({
     const hasError = touched[name] && errors[name];
 
     return (
-        <div className={`form-field ${className}`}>
+        <div className="flex gap-2">
             {label && (
                 <label htmlFor={name} className="form-label">
                     {label}
@@ -32,9 +31,11 @@ export const FormField = ({
                 onChange={(e) => handleChange(name, e.target.value)}
                 onBlur={() => handleBlur(name)}
                 placeholder={placeholder}
-                className={`form-input ${hasError ? "error" : ""}`}
+                className="border rounded p-1"
+                style={{borderColor: hasError ? 'red': 'white'}}
+
             />
-            {hasError && <span className="error-message">{errors[name]}</span>}
+            {hasError && <span className="text-red-500 mt-0.5">{errors[name]}</span>}
         </div>
     );
 };

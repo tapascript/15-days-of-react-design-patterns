@@ -42,7 +42,7 @@ export const UserCRUD = () => {
     const handleCreate = async (values) => {
         await new Promise((resolve) => setTimeout(resolve, 500)); // Simulate API call
         const newUser = {
-            id: Date.now(),
+            id: users.length + 1,
             ...values,
         };
         setUsers([...users, newUser]);
@@ -97,8 +97,8 @@ export const UserCRUD = () => {
             )}
 
             {showForm && (
-                <div className="flex flex-col">
-                    <h3 className="text-xl">{editingUser ? "Edit User" : "Create New User"}</h3>
+                <div className="flex flex-col m-2" >
+                    <h2 className="text-2xl mb-2">{editingUser ? "Edit User" : "Create New User"}</h2>
                     <Form
                         initialValues={
                             editingUser || { name: "", email: "", role: "" }

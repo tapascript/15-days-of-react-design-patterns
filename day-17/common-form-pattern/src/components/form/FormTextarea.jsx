@@ -9,7 +9,6 @@ export const FormTextarea = ({
     placeholder,
     rows = 4,
     required = false,
-    className = "",
 }) => {
     const { values, errors, touched, handleChange, handleBlur } =
         useFormContext();
@@ -17,7 +16,7 @@ export const FormTextarea = ({
     const hasError = touched[name] && errors[name];
 
     return (
-        <div className={`form-field ${className}`}>
+        <div className="flex gap-2">
             {label && (
                 <label htmlFor={name} className="form-label">
                     {label}
@@ -32,9 +31,12 @@ export const FormTextarea = ({
                 onBlur={() => handleBlur(name)}
                 placeholder={placeholder}
                 rows={rows}
-                className={`form-textarea ${hasError ? "error" : ""}`}
+                className="border rounded p-1"
+                style={{ borderColor: hasError ? "red" : "white" }}
             />
-            {hasError && <span className="error-message">{errors[name]}</span>}
+            {hasError && (
+                <span className="text-red-500 mt-0.5">{errors[name]}</span>
+            )}
         </div>
     );
 };

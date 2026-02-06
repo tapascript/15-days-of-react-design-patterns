@@ -9,15 +9,14 @@ export const FormButtons = ({
     resetText = "Reset",
     onCancel,
     cancelText = "Cancel",
-    className = "",
 }) => {
     const { isSubmitting, resetForm } = useFormContext();
 
     return (
-        <div className={`form-buttons ${className}`}>
+        <div className="flex gap-1.5">
             <button
                 type="submit"
-                className="btn btn-primary"
+                className="bg-green-600 p-1 rounded cursor-pointer"
                 disabled={isSubmitting}
             >
                 {isSubmitting ? "Submitting..." : submitText}
@@ -26,7 +25,7 @@ export const FormButtons = ({
             {showReset && (
                 <button
                     type="button"
-                    className="btn btn-secondary"
+                    className="bg-gray-200 text-black p-1 rounded cursor-pointer"
                     onClick={resetForm}
                     disabled={isSubmitting}
                 >
@@ -37,7 +36,7 @@ export const FormButtons = ({
             {onCancel && (
                 <button
                     type="button"
-                    className="btn btn-secondary"
+                    className="bg-red-500 p-1 rounded cursor-pointer"
                     onClick={onCancel}
                     disabled={isSubmitting}
                 >

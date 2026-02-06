@@ -8,7 +8,6 @@ export const FormSelect = ({
     label,
     options = [],
     required = false,
-    className = "",
 }) => {
     const { values, errors, touched, handleChange, handleBlur } =
         useFormContext();
@@ -16,7 +15,7 @@ export const FormSelect = ({
     const hasError = touched[name] && errors[name];
 
     return (
-        <div className={`form-field ${className}`}>
+        <div className="flex gap-2">
             {label && (
                 <label htmlFor={name} className="form-label">
                     {label}
@@ -29,7 +28,8 @@ export const FormSelect = ({
                 value={values[name] || ""}
                 onChange={(e) => handleChange(name, e.target.value)}
                 onBlur={() => handleBlur(name)}
-                className={`form-select ${hasError ? "error" : ""}`}
+                 className="border rounded p-1"
+                style={{borderColor: hasError ? 'red': 'white'}}
             >
                 <option value="">Select...</option>
                 {options.map((option) => (
@@ -38,7 +38,7 @@ export const FormSelect = ({
                     </option>
                 ))}
             </select>
-            {hasError && <span className="error-message">{errors[name]}</span>}
+            {hasError && <span className="text-red-500 mt-0.5">{errors[name]}</span>}
         </div>
     );
 };
