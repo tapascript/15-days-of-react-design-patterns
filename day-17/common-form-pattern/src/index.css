@@ -22,3 +22,26 @@ body {
   background-color: black;
   color: #ffffff;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  color: #333;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background: #f9f9f9;
+  font-weight: 600;
+  color: #333;
+}
+
+tr:hover {
+  background: #f5f5f5;
+}
