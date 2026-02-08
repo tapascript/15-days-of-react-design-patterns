@@ -1,11 +1,5 @@
 import { useCallback, useState } from "react";
 
-/**
- * Custom hook for managing form state and operations
- * @param {Object} initialValues - Initial form values
- * @param {Function} onSubmit - Submit handler function
- * @param {Function} validate - Validation function (optional)
- */
 export const useForm = (initialValues = {}, onSubmit, validate) => {
     const [values, setValues] = useState(initialValues);
     const [errors, setErrors] = useState({});

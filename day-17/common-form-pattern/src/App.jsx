@@ -1,4 +1,4 @@
-import { UserCRUD } from "./pages/UserCURD";
+import { UserCRUD } from "./pages/UserCRUD";
 
 function App() {
     return (

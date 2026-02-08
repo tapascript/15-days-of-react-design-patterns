@@ -10,7 +10,7 @@ Your support means a lot.
 - Liked my work? It takes months of hard work to create quality content and present it to you. You can show your support for me with a STAR(⭐) to this repository.
 
     > Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)
-    [![Stargazers repo roster for tapascript/15-days-of-react-design-patterns](https://reporoster.com/stars/tapascript/15-days-of-react-design-patterns)](https://github.com/tapascript/15-days-of-react-design-patterns)
+    > [![Stargazers repo roster for tapascript/15-days-of-react-design-patterns](https://reporoster.com/stars/tapascript/15-days-of-react-design-patterns)](https://github.com/tapascript/15-days-of-react-design-patterns)
 
 ### 🤝 Sponsor My Work
 
@@ -45,3 +45,4 @@ You, all my `Stargazers`, are making it work. This is because of you. A BIG THAN
 - **`Day 14: One React Pattern That Instantly Cleans Up Messy Components 🔥`** - [Watch Video](https://youtu.be/25IKfl9jR7A) || [Source Code](https://github.com/tapascript/15-days-of-react-design-patterns/tree/main/day-14)
 - **`Day 15: This One React Pattern Can Save Your App From Crashing 🔥`** - [Watch Video](https://youtu.be/0qxF4jb-eUg) || [Source Code](https://github.com/tapascript/15-days-of-react-design-patterns/tree/main/day-15)
 - **`Day 16: One React Pattern That Instantly Fixes Data Fetching Hell 🔥`** - [Watch Video](https://youtu.be/tY8rhkLdr2A) || [Source Code](https://github.com/tapascript/15-days-of-react-design-patterns/tree/main/day-16)
+- **`Day 17: CLEAN REACT FORMS: The Custom Hook Pattern That Cuts 100+ Lines of Code 🔥`** - [Watch Video](https://youtu.be/HSVC5-d5sjY) || [Source Code](https://github.com/tapascript/15-days-of-react-design-patterns/tree/main/day-17)
